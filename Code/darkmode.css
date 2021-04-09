@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+body {
+    background-color: rgb(27, 27, 27);
+}
+
+.card {
+    border-width: 5px; 
+}
+
+.nav-item {
+    padding: 10px;
+}
+
+.img-wrap {
+    width: 200px;
+    height: 150px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0;
+  }
+div.img-wrap > img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    transform: translate(-50%, -50%);
+  }
+
+  
+
+
+.carousel-item img {
+    height: 400px;
+}
+
+a.button_link {
+    color: white;
+    text-decoration: none;
+}
+.active > a.button_link {
+    color: black;
+    text-decoration: none;
+}
+
+a.dropdown-item {
+    color: black;
+    text-decoration: none;
+}
+
+li > a > p {
+    margin: 0%;
+}
+p.active {
+    font-weight: bolder;
+}
+
+span.header_text_lg {
+  font-size: 105px;
+  font-family:  'DotGothic16';
+  letter-spacing:0.2em;
+  color: whitesmoke;
+  text-shadow: 6px 6px black;
+  font-weight: 800;
+}
+
+button{
+    font-family: 'DotGothic16';
+    font-weight: bolder;
+}
+
+span.header_text_sm {
+    font-size: 80px;
+    font-family: 'DotGothic16';
+    letter-spacing:0.2em;
+    color: whitesmoke;
+    text-shadow: 5px 5px black;
+    font-weight: 800;
+  }
+
+span.card_title_text {
+    font-family: 'DotGothic16';
+    letter-spacing:0.2em;
+    color: whitesmoke;
+    font-weight: 800;
+    font-size: 45px;
+}
+
+span.title_text {
+    font-family: 'DotGothic16';
+    letter-spacing:0.2em;
+    /*color: rgb(255, 251, 0);*/
+    font-weight: 800;
+    font-size: 45px;
+    color: white;
+}
+
+span.body_text_sm{
+  font-family: "Comic Sans MS", "Comic Sans";
+  letter-spacing:0.2em;
+  color: rgba(0, 0, 0, 0.788);
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+
+span.body_text_lg{
+    font-family: "Comic Sans MS", "Comic Sans";
+    letter-spacing:0.2em;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 30px;
+  }
+
+#activities_recap {
+    font-family: 'DotGothic16';
+    color:rgb(22, 11, 126);
+    font-weight: bolder;
+}
+
+/*For STUCO Rebrand Page */
+#stuco_rebrand_text {
+    font-size: 30px;
+    margin-top: 3rem;
+    font-family: "Comic Sans MS", "Comic Sans";
+}
+
+.blue{
+    background-color: rgb(27, 31, 65);   
+}
+
+
+.cyan {
+    background-color: rgb(64, 2, 105);
+}
+
+.red {
+    background-color: #680321; 
+}
+
+.black {
+    background-color: rgb(33, 58, 52);
+}
+
+.text_card {margin:auto}
+
+.activity_card img{
+    height: 400px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .text_card{
+        margin-top: 1rem;
+    }
+
+    .activity_card{
+        margin-bottom: 1rem;
+    }
+
+    span.header_text_lg {
+        font-size: 60px;
+    }
+    
+    span.header_text_sm {
+        font-size: 50px;
+    }
+    
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+ .text_card{
+     margin-top: 1rem;
+ }
+
+ .activity_card{
+    margin-bottom: 1rem;
+}
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .activity_card{
+        margin-bottom: 1rem;
+    }
+
+    #stuco_rebrand_text {
+        font-size: 20px;
+    }
+
+    span.header_text_lg {
+        font-size: 70px;
+    }
+
+    span.body_text_lg {
+        font-size: 18px;
+    }
+
+    span.title_text {
+        font-size: 35px;
+    }
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  
+  
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+    .activity_card{
+        margin-bottom: 1rem;
+    }
+}
+
+
