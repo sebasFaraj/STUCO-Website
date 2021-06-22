@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+
+<html> 
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link href = "../../general.css" rel = "stylesheet">
+    
+        <title>Christmas Baskets</title>
+        <link  rel="shortcut icon" href = "../../Images/logo.ico"> 
+    </head>
+
+    <body>
+         <!--NAVBAR Every item in the bar is sent to a dropdown menu after reaching a certain breakpoint. Any YEAR item is also a dropdown itself with the list of activities for a certain year-->
+         <header class = "navbar navbar-expand-md navbar-dark blue">
+            <nav class = "container-fluid flex-wrap flex-md-nowrap pl-2"> 
+              
+                <a href="#">
+                    <object class = "navbar-brand p-0 me-1" data="../../Images/WHITE ICON.svg" width="45" height="35"></object>
+                </a> 
+               
+
+                <button class ="navbar-toggler" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navbarContent">
+                    <span class = "navbar-toggler-icon"> </span>
+                </button>
+
+                <div class = "navbar-collapse collapse" id = "navbarContent">
+                        <ul class = "nav navbar-nav flex-row flex-wrap list-group list-group-horizontal">
+                            <li class = "nav-item"> 
+                                <div class="dropdown">
+                                    <button class="btn btn-outline-light dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                    2020-2021
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                       <li><a class="dropdown-item" href="../stuco-rebrand/stuco_rebrand.html"> <p> STUCO Rebrand</p></a></li>
+                                        <li><a class="dropdown-item" href="../dia-de-la-bandera/dia_de_la_bandera.html"> <p> Día de la Bandera</p></a></li>
+                                        <li><a class="dropdown-item" href="../mes-de-la-patria/mes_de_la_patria_giveaway.html"> <p> Mes de la Patria Giveway</p></a></li>
+                                        <li><a class="dropdown-item" href="../childrens-day-hospital-maria/childrens_day_hospital_maria.html"> <p> Children's Day Gift to Hospital Maria</p></a></li>
+                                        <li><a class="dropdown-item" href="../athletes-day/athletes_day.html"> <p> Athlete Day</p></a></li>
+                                        <li><a class="dropdown-item" href="../eSports-tournament/eSports.html"> <p> eSports Virtual Tournament</p></a></li>
+                                        <li><a class="dropdown-item" href="../pro-clubs-weekend/pro_clubs_weekend.html"> <p  > Pro Clubs Weekend Event</p></a></li>
+                                        <li><a class="dropdown-item" href="../virtual-halloween/virtual_halloween.html"> <p> Virtual Halloween</p></a></li>
+                                        <li><a class="dropdown-item" href="../huracan-eta/huracan_eta.html"> <p> Recolecta Huracán Eta</p></a></li>
+                                        <li><a class="dropdown-item" href="../huracan-iota/huracan_iota.html"> <p> Recolecta Huracán Iota</p></a></li>
+                                        <li><a class="dropdown-item" href="../virtual-thanksgiving/virtual_thanksgiving.html"> <p> Virtual Thanksgiving</p></a></li>
+                                        <li><a class="dropdown-item" href="../christmas-basket-traditions/christmas_baskets_tradition.html"> <p> Christmas "baskets" tradition</p></a></li>     
+                                    </ul>
+                                </div>
+                            </li>
+                            
+                            <li class = "nav-item"> 
+                                <button class = "btn btn-outline-light btn-sm" type = "button"> <a class = "button_link" href="../../welcome-page/welcome.html"> Home</a> </button>
+                            </li>
+
+                            <li class = "nav-item"> 
+                                 <button class = "btn btn-outline-light btn-sm" type = "button" onclick="toggle()"> <span class="dark_mode_btn">Dark Mode </span> </button>
+                            </li>
+                        </ul>
+                    
+                </div>
+                
+            </nav>
+        </header>
+        <!--MAIN CONTAINER-->
+        <div class="container-fluid mt-3">
+
+            <!--HEADER The header is comprised of a card with two text segments, the background color is stated in each section's class name and the text is in a decorated span-->
+            <div class="row d-flex justify-content-center">
+                <div class="col-xl-12 col-lg-10">
+                    <div class="card border-dark">
+                        <div class = "card-title text-center blue"> 
+                            <span class = "header_text_sm">Christmas Baskets 🎅⛄</span>
+                        </div>
+                        <div class="subtext">
+                            <div class="card-text mx-5">
+                                <p class = "h1" id = "activities_recap"> Holiday Activities</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+           <!--MIDDLE PART This part is comprised of a carousel and a textbox. Their sizes and content vary from page to page. The textbox is also a card which is styled exactly like the header-->
+            <div class="row p-2">
+                <div class="col-xl-6 col-lg-5 col-md-10 col-sm-10 mx-auto text_card">
+                    <div class="card border-dark">
+                        <div class="card-body dark-cyan">
+                            <div class="card-title text-center">
+                                <span class = "title_text">Christmas Baskets</span>
+                            </div>
+                            <div class="card-text text-center">
+                                <span class = "body_text_sm">To keep the annual tradition going, STUCO collected funds from the entire AST community to put together Christmas Baskets for the maintenance and cleaning staff!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xl-4 col-lg-7 col-md-9 col-sm-10 mx-auto mt-3">
+                    <div class="card border-dark">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="flier.jpg" class="d-block w-100">
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+             <!--ACTIVITY CARDS These cards at the bottom contain all the images and information of that Event, they are always going to be centered no matter the amount of cards and there can me a max or 3 per row-->
+             <div class = "row d-flex justify-content-around align-items-center my-3">
+                <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 activity_card">
+                    <div class="card border-dark">
+                        <img class = "card-img-bottom" src = "people.jpg" alt = "Turkey">
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 activity_card">
+                    <div class="card border-dark">
+                        <img class = "card-img-bottom" src = "thank_you.jpg" alt = "Turkey">
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+        <!--FOOTER This is the bar at the bottom. It sticks to the bottom bc of a 100vh body and a mt-auto in the footer itself-->
+        <footer class="footer mt-auto black">
+            <div class="container-fluid">
+                <div class = "row d-flex justify-content-around p-2">
+                    
+                    <div class="col-xl-5 col-lg-8 col-md-8 text-center">
+                        <p class = "footer_text"> &copy; <script>document.write(new Date().getFullYear())</script> The American School of Tegucigalpa. All Rights Reserved.</p>
+                        <p class = "footer_text" style="font-weight: bolder;"> Designed by Camila Batres and Sebastian Faraj. Created by Sebastian Faraj</p>
+                    </div>
+
+                     <div class="col-xl-4 col-lg-4 col-md-4 d-flex justify-content-center social">
+                        <a href="https://www.facebook.com/americanschool/"> <i class = "fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/aststuco/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/channel/UCi3O5waYwlSolUKgIuXf6Nw"><i class="fab fa-youtube"></i></a>
+                    </div>     
+                </div>
+            </div>  
+        </footer>
+      
+        
+            
+                
+          
+
+
+        <script src="https://kit.fontawesome.com/53229147e4.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <script src="../../dark_mode.js"></script>
+    </body>
+</html>

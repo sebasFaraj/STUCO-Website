@@ -1,0 +1,296 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+body {
+    background-color: rgb(225, 225, 225);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.activity_card{margin-bottom: 1rem;}
+
+.card {
+    border-width: 4px; 
+}
+
+
+.nav-item {
+    padding: 10px;
+}
+
+.img-wrap {
+    width: 200px;
+    height: 150px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0;
+  }
+div.img-wrap > img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    transform: translate(-50%, -50%);
+  }
+
+.carousel-item img {
+    height: 400px;
+}
+
+a.button_link {
+    color: white;
+    text-decoration: none;
+}
+.active > a.button_link {
+    color: black;
+    text-decoration: none;
+}
+
+a.dropdown-item {
+    color: black;
+    text-decoration: none;
+}
+
+li > a > p {
+    margin: 0%;
+}
+p.active {
+    font-weight: bolder;
+}
+
+span.header_text_lg {
+  font-size: 105px;
+  font-family:  'Poppins';
+  letter-spacing:0.05em;
+  color: whitesmoke;
+  text-shadow: 6px 6px black;
+}
+
+button{
+    font-family: 'Poppins';
+    font-weight: bolder;
+}
+
+.subtext {
+    display: flex;
+    justify-content: end;
+    margin: 0%;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 0px 0px 8px 0px;
+}
+
+span.header_text_sm {
+    font-size: 80px;
+    font-family: 'Poppins';
+    letter-spacing:0.05em;
+    color: whitesmoke;
+    text-shadow: 4px 4px rgba(0,0,0,0.7);
+    font-weight: 800;
+  }
+
+span.card_title_text {
+    font-family: 'Poppins';
+    letter-spacing:0.05em;
+    color: whitesmoke;
+    font-weight: 800;
+    font-size: 45px;
+}
+
+span.title_text {
+    font-family: 'Poppins';
+    letter-spacing:0.05em;
+    font-weight: 800;
+    font-size: 45px;
+    color: black;
+}
+
+span.body_text_sm{
+  font-family: 'Roboto Mono', monospace;
+  letter-spacing:0.05em;
+  color: rgba(0, 0, 0);
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+
+span.body_text_lg{
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing:0.05em;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: 30px;
+  }
+
+p.footer_text{
+    color: white;
+    font-size: 1rem;
+    margin: 5px 5px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#activities_recap {
+    font-family: 'Poppins';
+    color:rgb(22, 11, 126);
+    font-weight: bolder;
+    font-style: italic;
+    display: inline;
+}
+
+/*For STUCO Rebrand Page */
+#stuco_rebrand_text {
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing:0.05em;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.rebrand_img {
+    height: 500px;
+}
+
+.blue{
+    background-color: rgb(16, 30, 158);  
+}
+
+.dark-cyan {
+    background-color: rgb(10, 212, 185);
+}
+
+.red {
+    background-color: #ff004c; 
+}
+
+.black {
+    background-color: rgb(151, 77, 197);
+}
+
+.purple{
+    background-color: #CC33FF;
+}
+
+.text_card {
+    margin:auto
+}
+.card-text{
+    padding-bottom: 0.5rem;
+}
+
+.activity_card img{
+    height: 400px;
+}
+
+.social a {
+    font-size: 35px;
+    margin: 7px;
+}
+
+.fa-youtube {
+    color: white;
+}
+
+.fa-instagram {
+    color: white;
+}
+
+.fa-facebook {
+    color: white;
+}
+
+
+/*Medium*/
+@media only screen and (max-width: 992px) {
+    .activity_card{
+        margin-bottom: 1rem;
+    }
+
+    #stuco_rebrand_text {
+        font-size: 20px;
+    }
+
+    span.header_text_lg {
+        font-size: 60px;
+    }
+
+    span.header_text_sm {
+        font-size: 50px;
+    }
+
+    span.body_text_lg {
+        font-size: 35px;
+    }
+
+    span.title_text {
+        font-size: 32px;
+    }
+
+} 
+
+/*Small*/
+
+@media only screen and (max-width: 768px) {
+    .text_card{margin-top: 1rem;}
+
+    span.header_text_lg {font-size: 55px;}
+    
+    span.header_text_sm {font-size: 50px;}
+   
+   }
+
+
+ /*Extra Small */
+@media only screen and (max-width: 600px) {
+    .text_card{margin-top: 1rem;}
+
+    .activity_card{margin-bottom: 1rem;}
+
+    span.header_text_lg {font-size: 38px;}
+    
+    span.header_text_sm {font-size: 32px;}
+    
+    .social a {font-size: 25px; margin: 7px;}
+
+    p.footer_text{font-size: 15px;}
+
+    span.card_title_text{font-size: 35px;}
+
+    span.title_text{font-size: 30px;}
+
+    span.body_text_lg {font-size: 20px;}
+
+    span.body_text_sm {font-size: 14px;}
+
+    #activities_recap {
+        margin: auto;
+        display: inline;
+        font-size: 22px;
+    }
+
+    .subtext{
+        justify-content: center;
+    }
+
+    .rebrand_img {
+        height: 250px;
+    }
+
+
+}
+
+
+
+
+
+
+
